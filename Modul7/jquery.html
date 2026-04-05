@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Program Menu jQuery</title>
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- jQuery & jQuery UI JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .ui-menu {
+            width: 220px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .ui-menu li {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Menu Navigasi jQuery</h2>
+
+    <!-- Menu utama -->
+    <ul id="menuUtama">
+        <li><div>Beranda</div></li>
+        <li>
+            <div>Profil Produk</div>
+            <ul>
+                <li><div>Elektronik</div></li>
+                <li><div>Pakaian</div></li>
+                <li><div>Otomotif</div></li>
+            </ul>
+        </li>
+        <li><div>Kontak Kami</div></li>
+        <li class="ui-state-disabled"><div>Layanan Segera Hadir</div></li>
+    </ul>
+
+    <script>
+        $(function () {
+            // Inisialisasi widget menu jQuery UI
+            $("#menuUtama").menu();
+        });
+    </script>
+
+    <h3>Kesimpulan</h3>
+    <p>
+        jQuery UI mempermudah pembuatan menu navigasi dengan tampilan interaktif.
+        Menu ini bisa digunakan untuk mengorganisasi halaman web agar lebih terstruktur
+        dan memudahkan pengguna dalam menjelajahi konten.
+    </p>
+
+</body>
+</html>

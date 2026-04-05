@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Basic Dialog jQuery</title>
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- jQuery & jQuery UI JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background: #2980b9;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1f6391;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Contoh Jendela Dialog</h2>
+    <p>Halaman ini akan otomatis menampilkan kotak dialog saat dimuat.</p>
+
+    <!-- Dialog box -->
+    <div id="dialogBasic" title="Informasi Penting">
+        <p>
+            Ini adalah jendela <strong>Basic Dialog</strong> yang dibuat menggunakan jQuery UI.
+            Anda dapat menggeser atau menutup jendela ini.
+        </p>
+    </div>
+
+    <!-- Tombol untuk membuka kembali dialog -->
+    <button id="btnBuka">Buka Dialog Lagi</button>
+
+    <script>
+        $(function () {
+            // Inisialisasi dialog
+            $("#dialogBasic").dialog({
+                autoOpen: true, // Dialog langsung terbuka saat halaman dimuat
+                show: { effect: "blind", duration: 500 },
+                hide: { effect: "explode", duration: 500 }
+            });
+
+            // Event klik tombol untuk membuka kembali dialog
+            $("#btnBuka").on("click", function () {
+                $("#dialogBasic").dialog("open");
+            });
+        });
+    </script>
+
+        <h3>Kesimpulan</h3>
+    <p>
+        jQuery UI menyediakan komponen siap pakai seperti dialog, sehingga pengembang dapat
+        membuat antarmuka web yang lebih interaktif dengan sedikit kode. Dialog ini bisa
+        digunakan untuk menampilkan pesan, konfirmasi, atau informasi tambahan secara elegan.
+    </p>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Mengakses Objek Radio</title>
+    </head>
+    <body>
+        Klik pada musik yang paling Anda sukai <br>
+        <form Name = "formTes"
+            Method = "get">
+        <input Type = "radio"
+            Name = "radioMusik"
+            Value = "Jazz"
+            onClick = "info()">Jazz<br>
+        <input Type = "radio"
+            Name = "radioMusik"
+            Value = "Keroncong"
+            onClick = "info()">Keroncong<br>
+        <input Type = "radio"
+            Name = "radioMusik"
+            value="Dangdut"
+            onclick="info()">Dangdut<br>
+        <input Type = "radio"
+            Name = "radioMusik"
+            value="Lainnya"
+            onclick="info()">Lainnya<br>
+    <hr>
+    info:
+    <input Type = "text"
+            Name = "fieldMusik"
+            Size = "40">
+    </form>
+    <script> language = "JavaScript">
+        function info () {
+            for (var i = 0; i < 4; i++)
+            if (document.formTes.radioMusik[i].checked)
+                document.formTes.fieldMusik.value =
+                    document.formTes.radioMusik[i].value;
+        }
+    </script>
+
+    <h3>Kesimpulan</h3>
+        <p>
+            Contoh di atas menunjukkan bagaimana JavaScript dapat mengakses dan memproses input radio button.
+            Saat pengguna memilih salah satu opsi, nilai dari radio tersebut akan ditampilkan pada field teks.
+            Teknik ini berguna untuk menangkap preferensi atau pilihan pengguna secara langsung dalam form.
+        </p>
+    </body>
+</html>

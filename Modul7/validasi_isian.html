@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Validasi Masukan</title>
+    </head>
+    <body>
+        <script language = "JavaScript">
+            function cekNama (form) {
+                if (form.elements[0]. value == "") {
+                    alert ("Nama harus dimasukkan");
+                    form.nama.focus ();
+                    form.nama.select ();
+                }
+                alert ("Terima kasih," +
+                    form.elements[0]. value);
+            }
+        </script>
+        <form nama = "formku">
+            <pre>
+                Nama : <input type = "text" name = "nama"><br>
+                <input type = "button" value = "Kirim"
+                onclick="cekNama (this.foorm)"><br>
+            </pre>
+        </form>
+
+        <h3>Kesimpulan</h3>
+        <p>
+            Contoh di atas menunjukkan bagaimana JavaScript dapat digunakan untuk melakukan validasi input form.
+            Jika pengguna tidak memasukkan nama, sistem akan menampilkan peringatan dan mengarahkan fokus kembali
+            ke field input. Jika nama diisi, sistem menampilkan ucapan terima kasih. Validasi seperti ini penting
+            untuk memastikan data yang dikirim sesuai dengan kebutuhan aplikasi.
+        </p>
+    </body>
+</html>

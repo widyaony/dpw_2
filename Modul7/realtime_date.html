@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Waktu Real-time</title>
+</head>
+<body onload="tampilkanWaktu()">
+    <h2>Waktu Saat Ini:</h2>
+    <div id="clock" style="font-size: 24px; font-weight: bold;"></div>
+
+    <script>
+        function tampilkanWaktu() {
+            setInterval(() => {
+                const sekarang = new Date();
+                document.getElementById('clock').textContent = sekarang.toLocaleString('id-ID');
+            }, 1000);
+        }
+    </script>
+
+    <h3>Kesimpulan</h3>
+    <p>
+        Program di atas menunjukkan bagaimana JavaScript dapat digunakan untuk menampilkan waktu
+        secara real-time di halaman web. Dengan memanfaatkan <code>setInterval()</code> dan objek
+        <code>Date</code>, kita bisa membuat tampilan jam yang selalu diperbarui setiap detik.
+        Teknik ini berguna untuk aplikasi yang membutuhkan informasi waktu langsung, seperti dashboard,
+        sistem monitoring, atau tampilan jam digital.
+    </p>
+</body>
+</html>
