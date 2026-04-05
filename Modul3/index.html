@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Widya Ony Yusnita Rahayu">
+        <meta name="nim" content="253307041">
+
+        <!-- Malengkapi Meta -->
+         <meta name="description" content="website praktikum HTML5 Lanjut">
+         <meta name="keywords" content="HTML, Form, Audio, SVG, Canvas">
+
+         <!-- Melengkapi Style-->
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #ff8686;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: #ffbbbb;
+                padding: 20px;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #ffcaca;
+                height: 300px;
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            footer{
+                background-color: #a87171;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+
+            @media (max-width: 600px){
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h2>Website Widya</h2>
+        </header>
+ 
+        <section> 
+
+            <nav>
+                <!-- Melengkapi Navigasi Link -->
+                <a href="index.html">Home</a> |
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">svg</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">pendaftaran</a></li>
+            </nav>
+            
+            <article>
+                <h1>Judul artikel</h1>
+
+                <p>Ini adalah artikel pertama saya.
+                    Kesimpulan dari hasil ujicoba: struktur HTML dasar ini
+                    berhasil ditampilkan di browser dengan baik.</p>
+
+                <p><b>Kesimpulan:</b> Dengan menggunakan elemen semantik HTML5 
+                seperti <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, 
+                <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, dan 
+                <code>&lt;footer&gt;</code>, halaman web menjadi lebih terstruktur, 
+                mudah dipahami, serta mendukung keterbacaan dan SEO.</p>
+
+            </article>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Website Widya - Semua Hak Dilindungi</p>
+        </footer>
+    </body>
+</html>

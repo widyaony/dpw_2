@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Video</title>
+  <meta name="author" content="Widya Ony Yusnita Rahayu">
+  <meta name="nim" content="253307041">
+  <meta name="description" content="Website praktikum HTML5 Lanjut - Video">
+  <meta name="keywords" content="HTML, Video, Praktikum">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #ff8686;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* NAVIGATION */
+    nav {
+      float: left;
+      width: 30%;
+      min-height: 799px;
+      background: #ffbbbb;
+      padding: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+    }
+    nav ul li {
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      display: block;
+      padding: 6px;
+      border-radius: 4px;
+    }
+    nav ul li a:hover {
+      background-color: #ff8686;
+      color: white;
+    }
+
+    /* ARTICLE */
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #ffcaca;
+      min-height: 799px;
+    }
+
+    figure {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    figcaption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    video, iframe {
+      border: 3px solid #a87171;
+      border-radius: 7px;
+    }
+
+    /* CLEAR FLOAT */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #a87171;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Website Widya</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+      </ul>
+    </nav>
+
+    <article>
+       <h1>Canvas</h1>
+      <canvas id="myCanvas" width="300" height="200"></canvas>
+
+      <p><b>Kesimpulan:</b> Dengan elemen <code>&lt;canvas&gt;</code>, kita bisa menggambar bentuk, 
+      animasi, dan grafik menggunakan JavaScript. Canvas fleksibel untuk eksplorasi visual 
+      namun membutuhkan kode tambahan agar interaktif.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Website Widya - Semua Hak Dilindungi</p>
+  </footer>
+
+  <!-- Script di bagian bawah -->
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 150, 100);
+  </script>
+
+</body>
+</html>

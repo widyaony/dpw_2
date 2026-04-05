@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman Video</title>
+  <meta name="author" content="Widya Ony Yusnita Rahayu">
+  <meta name="nim" content="253307041">
+  <meta name="description" content="Website praktikum HTML5 Lanjut - Video">
+  <meta name="keywords" content="HTML, Video, Praktikum">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #ff8686;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* NAVIGATION */
+    nav {
+      float: left;
+      width: 30%;
+      min-height: 799px;
+      background: #ffbbbb;
+      padding: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+    }
+    nav ul li {
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      display: block;
+      padding: 6px;
+      border-radius: 4px;
+    }
+    nav ul li a:hover {
+      background-color: #ff8686;
+      color: white;
+    }
+
+    /* ARTICLE */
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #ffcaca;
+      min-height: 799px;
+    }
+
+    figure {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    figcaption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    video, iframe {
+      border: 3px solid #a87171;
+      border-radius: 7px;
+    }
+
+    /* CLEAR FLOAT */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #a87171;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Website Widya</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+      </ul>
+    </nav>
+
+    <article>
+         <h1>Form Pendaftaran</h1> <br><br>
+
+            <form>
+
+                <label>No. Telepon:</label><br>
+                <input type="tel" pattern="[0-9]{4}-[0-9]{6}" placeholder="0812-123456" required><br><br>
+
+                <label>Email:</label><br>
+                <input type="email" required><br><br>
+
+                <label>Tanggal Lahir:</label><br>
+                <input type="date" min="1987-01-01" max="1993-01-01" required><br><br>
+
+                <label>Tingkat Kepentingan (0-10):</label><br>
+                <input type="range" min="0" max="10"><br><br>
+
+                <label>Tanggal Kunjungan:</label><br>
+                <input type="date" min="2026-03-03" required><br><br>
+
+                <label>Jam (17.00 - 21.00):</label><br>
+                <input type="time" min="17:00" max="21:00" required><br><br>
+
+                <input type="submit" value="Daftar">
+
+            </form>
+        </article>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Halaman SVG</title>
+  <meta name="author" content="Widya Ony Yusnita Rahayu">
+  <meta name="nim" content="253307041">
+  <meta name="description" content="Website praktikum HTML5 Lanjut - SVG">
+  <meta name="keywords" content="HTML, SVG, Praktikum">
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; background-color: #fff5f5; }
+
+    /* HEADER */
+    header {
+      background-color: #ff8686;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* SECTION dengan FLEXBOX */
+    section { display: flex; min-height: calc(100vh - 120px); }
+
+    /* NAVIGATION */
+    nav {
+      width: 30%; background: #ffbbbb; padding: 20px;
+    }
+    nav ul { list-style-type: none; }
+    nav ul li { margin-bottom: 10px; }
+    nav ul li a {
+      text-decoration: none; color: black; font-weight: bold;
+      display: block; padding: 6px; border-radius: 4px;
+    }
+    nav ul li a:hover { background-color: #ff8686; color: white; }
+
+    /* ARTICLE */
+    article {
+      flex: 1; padding: 20px; background-color: #ffcaca;
+    }
+
+    svg {
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #a87171;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      section { flex-direction: column; }
+      nav, article { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Website Widya</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gambar.html">Gambar</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="svg.html">SVG</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+        <li><a href="pendaftaran.html">Pendaftaran</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>SVG</h1>
+
+      <!-- Lingkaran + Poligon -->
+      <svg width="300" height="200">
+        <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="blue" />
+        <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:2" />
+      </svg>
+
+      <!-- Persegi Panjang -->
+      <svg width="300" height="150">
+        <rect x="50" y="20" width="200" height="100" style="fill:orange;stroke:black;stroke-width:3" />
+      </svg>
+
+      <!-- Ellipse -->
+      <svg width="300" height="200">
+        <ellipse cx="150" cy="100" rx="80" ry="50" style="fill:pink;stroke:blue;stroke-width:3" />
+      </svg>
+
+      <p><b>Kesimpulan:</b> Dengan elemen <code>&lt;svg&gt;</code>, kita bisa menggambar berbagai bentuk vektor 
+      seperti <i>circle</i> (lingkaran), <i>polygon</i> (segitiga), <i>rect</i> (persegi panjang), dan <i>ellipse</i> (oval). 
+      SVG mendukung warna, garis, dan transparansi sehingga cocok untuk grafik interaktif dan desain web modern.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Website Widya - Semua Hak Dilindungi</p>
+  </footer>
+</body>
+</html>

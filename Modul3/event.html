@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="author" content="Widya Ony Yusnita Rahayu">
+        <meta name="nim" content="253307041">
+
+        <!-- Malengkapi Meta -->
+         <meta name="description" content="website praktikum HTML5 Lanjut">
+         <meta name="keywords" content="HTML, Form, Audio, SVG, Canvas">
+
+         <!-- Melengkapi Style-->
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+            }
+
+            /* HEADER */
+            header {
+                background-color: #ff8686;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            /* NAVIGATION */
+            nav {
+                float: left;
+                width: 30%;
+                height: 660px;
+                background:#ffbbbb;
+                padding: 20px;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            
+            /* ARTICLE */
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #ffcaca;
+                height: 660px;
+            }
+
+            /* IMAGE */
+            img {
+                background-color: chocolate;
+                padding: 10px;
+                text-align: center;
+                color: white;
+                width: 300px;
+                height: 220px;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+
+            /* CLEAR FLOAT*/
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* FOOTER */
+            footer{
+                background-color: #a87171;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+
+            /* RESPONSIVE */
+            @media (max-width: 600px){
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+        <!-- Membuat Mouse Event -->
+         <script>
+            function zoomIn(img) {
+                img.style.transform = "scale(2)";
+                img.style.zIndex = "10";
+                img.style.position = "relative";
+            }
+
+            function zoomOut(img) {
+                img.style.transform = "scale(1)";
+                img.style.zIndex = "1";
+                img.style.position = "static";
+            }
+         </script>
+    </head>
+
+    <body>
+        <header>
+            <h2>Website Widya</h2>
+        </header>
+ 
+        <section> 
+
+            <nav>
+                <!-- Melengkapi Navigasi Link -->
+                <a href="index.html">Home</a> |
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">svg</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">pendaftaran</a></li>
+            </nav>
+            
+            <article>
+                <h1>Galeri Gambar - Mouse Event</h1>
+
+                <img src="gambar/nailong 5.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/nailong 2.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/nailong.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/nailong 8.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/nailong 9.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                <img src="gambar/nailong 10.jpg" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+ 
+               <p><b>Kesimpulan:</b> Dengan struktur semantik HTML5 dan CSS sederhana,
+                halaman galeri ini tampil rapi, responsif, serta mudah dipahami.
+                Efek mouse event (zoom in/out) membuat interaksi lebih menarik,
+                navigasi dengan list lebih terorganisir, dan styling pada gambar
+                menjaga tampilan tetap konsisten.</p>
+
+            </article>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Website Widya - Semua Hak Dilindungi</p>
+        </footer>
+
+    </body>
+
+</html>
