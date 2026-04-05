@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Belajar Pseudo-class</title>
+    <style>
+        /* Sembunyikan paragraf secara default */
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px; 
+        }
+
+        /* Tampilkan paragraf saat div di-hover */
+        div:hover p {
+            display: block;
+        }
+
+        /* Tugas tambahan: Link berubah warna  */
+        a:link { color: blue; }
+        a:hover { color: red; font-weight: bold; }
+
+        /* Paragraf kesimpulan tetap tampil */
+        p.kesimpulan {
+            display: block;       /* tampilkan */
+            background-color: white;
+            padding: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        Letakkan kursor disini untuk melihat div element 
+        <p>Saya adalah element p</p> 
+    </div>
+
+    <br>
+    <a href="#"> Arahkan mouse ke sini</a> 
+
+    <hr>
+    <h3>Kesimpulan:</h3>
+    <p class="kesimpulan">
+        Pseudo-class digunakan untuk mengatur tampilan elemen ketika ada interaksi dari pengguna. 
+        Pada contoh ini, paragraf ditampilkan saat kursor diarahkan ke div, dan link berubah warna serta gaya ketika di-hover. 
+        Dengan demikian, pseudo-class membantu membuat halaman web lebih interaktif dan menarik secara visual.
+    </p>
+</body>
+</html>
