@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tipe input</title>
+        <link rel="icon" type="img/png" href="gambar/icon.png" size="16x16"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <label for="username"> type "text" :</label><br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="pwd">type "password"</label><br>
+        <input type="password" id="pwd" name="pwd"></br><br>
+
+        <hr>
+        <h3>Uji coba 2 dengan atribut "name" yang sama</h3>
+        <input type="radio" id="html" name="pilihan" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="pilihan" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="JavaScript" name="pilihan" value="JavaScript">
+        <label for="javaScript">javaScript</label>
+
+        <h3>Uji coba 2 dengan atribut "name" yang berbeda</h3>
+        <input type="radio" id="html" name="A" value="HTML">
+        <label for="html">HTML</label><br>
+
+        <input type="radio" id="css" name="B" value="CSS">
+        <label for="css">CSS</label><br>
+
+        <input type="radio" id="JavaScript" name="C" value="JavaScript">
+        <label for="javaScript">javaScript</label>
+
+        <p>
+            Kesimpulan: Kalau semua radio button punya "name" yang sama, hanya bisa pilih satu saja. <br>
+            Kalau "name"-nya berbeda, bisa pilih lebih dari satu. <br>
+            Jadi, atribut "name" dipakai untuk mengelompokkan radio button.
+        </p>
+
+        <hr>
+        <h3>Uji coba 3</h3>
+        <input type="checkbox" id="id1" value="Bike">
+        <label for="id1">I have a bike</label> <br>
+
+        <input type="checkbox" id="id2" value="Car">
+        <label for="id2"> I have a car</label><br>
+
+        <input type="checkbox" id="id3" value="Boat">
+        <label for="id3"> I have a boat</label>
+        <p>
+            Kesimpulan: Checkbox bisa dipakai untuk memilih lebih dari satu opsi sekaligus. <br>
+            Mau "name" sama atau beda, hasilnya tetap bisa pilih banyak. <br>
+            Bedanya dengan radio button, checkbox mendukung banyak pilihan, sedangkan radio button hanya satu pilihan dalam satu grup.
+        </p>
+
+        <hr>
+        <h3>Uji coba 4</h3>
+        <label for="favcolor">Pilih warna dengan type="color":</label>
+        <input type="color" id="favcolor" name="favcolor"><br>
+
+        <label for="b">Pilih tanggal dengan type="date":</label>
+        <input type="date" id="b" name="tanggal"><br>
+
+        <input type="button" onclick="alert('Hello World!')" value="Click Me!"><br>
+        <p>
+            Kesimpulan: Input "color" dipakai untuk memilih warna, sedangkan "date" untuk memilih tanggal.<br> 
+            Tombol "button" bisa diberi perintah JavaScript, misalnya saat ditekan muncul pesan "Hello World!". <br> 
+            Jadi tombol bisa dipakai untuk memicu interaksi dengan pengguna.
+        </p>
+
+        <hr>
+        <h3>Uji coba 5</h3>
+        <label for="birthdaytime">Input dengan type datetime-local:</label>
+        <input type="datetime-local" id="birthddaytime" name="birthdaytime"><br>
+
+        <label for="bdaymonth">Input dengan type month:</label>
+        <input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br>
+        <p>
+            Kesimpulan: Input "datetime-local" dipakai untuk memilih tanggal dan waktu, <br>
+            "month" untuk memilih bulan dan tahun, dan "email" untuk memasukkan alamat email dengan format yang benar. <br>
+            Tampilan bisa sedikit berbeda di tiap browser, tapi fungsinya tetap sama. <br>
+            Browser modern biasanya mendukung semua tipe ini, sedangkan browser lama mungkin hanya menampilkan kotak teks biasa.
+        </p>
+
+        <hr>
+        <h3>Uji coba 6</h3>
+        <input type="image" src="gambar/icon.png" alt="submit" width="48" height="48"><br>
+        <label for="myfile">Pilih file:</label>
+
+        <input type="file" id="myfile" name="myfile"><br>
+        <input type="hidden" id="custId" name="custId" value="3487"><br>
+        <p>
+           Kesimpulan: Input "image" dipakai sebagai tombol submit bergambar. <br>
+            Input "file" digunakan untuk memilih dan mengunggah file dari perangkat. <br>
+            Input "hidden" menyimpan data yang tidak terlihat, tapi tetap ikut dikirim saat form disubmit. <br>
+            Jadi ketiga tipe ini membantu menambah cara interaksi dan pengiriman data dalam form.
+        </p>
+
+        <hr>
+        <h3>Uji coba 7</h3>
+        <label for="quantity">Quantity (between 1 and 5) :</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+
+        <label for="vol">Volume (between 0 and 50) :</label>
+        <input type="range" id="vol" name="vol" min="0" max="50"><br>
+        <p>
+            Kesimpulan: Input "number" dipakai untuk memasukkan angka dengan batas min dan max. <br>
+            Input "range" digunakan untuk memilih nilai dengan slider. <br>
+            Kalau nilai min diubah jadi negatif, maka slider bisa bergerak ke angka minus. <br>
+            Jadi kedua tipe ini membantu pengguna memilih angka dengan cara yang lebih mudah.
+        </p>
+
+        <hr>
+        <h3>Uji coba 8</h3>
+        <label for="homepage">Add your homepage :</label>
+        <input type="url" id="homepage" name="homepage"><br>
+
+        <label for="gsearch">Search Google :</label>
+        <input type="search" id="gsearch" name="gsearch"><br>
+
+        <label for="ph">Enter your phone number :</label>
+        <input type="tel" id="ph" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+        <p>
+            Kesimpulan: Input "url" dipakai untuk memasukkan alamat website, <br>
+            "search" untuk kolom pencarian, dan "tel" untuk nomor telepon dengan pola tertentu. <br>
+            Tampilan bisa berbeda di tiap browser, tapi fungsinya tetap sama yaitu membantu pengguna memasukkan data sesuai format.<br>
+        </p>
+
+        <hr>
+        <h3>Uji coba 9</h3>
+        <label for="appt">Select a time :</label>
+        <input type="time" id="appt" name="appt"><br>
+
+        <label for="week">Select a week :</label>
+        <input type="week" id="week" name="week"><br>
+        <p>
+            Kesimpulan: Input "time" dipakai untuk memilih jam, sedangkan "week" untuk memilih minggu dalam satu tahun. <br>
+            Tampilan bisa berbeda di tiap browser, tapi fungsinya tetap sama yaitu membantu pengguna memilih waktu dengan format yang jelas.
+        </p>
+    </body>
+</html>

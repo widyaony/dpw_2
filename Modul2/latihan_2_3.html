@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Div dan Span</title>
+    <link rel="icon" type="img/png" href="gambar//PNM (1).png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <link rel='stylesheet' href="css/main.css">
+</head>
+<body>
+    <div id="header">
+        <!-- Isi header disini id header -->
+        <h1> Judul/Header Website</h1>
+    </div>
+
+    <div id="main"> <!-- Isi disini id="main" -->
+        <div id="link">
+             <!-- Isi link disini id link -->
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <!-- Isi content disini id content -->
+            <h2>Form Pendaftaran Mahasiswa Baru</h2>
+            <form action="proses.php" method="POST">
+                <p>Nama Lengkap: <input type="text" name="nama" required></p>
+                <p>Tempat/Tanggal Lahir: <input type="text" name="ttl" placeholder="DD-MM-YYYY" required></p>
+                
+                <p>Agama:
+                    <select name="agama" required>
+                        <option>Islam</option>
+                        <option>Kristen</option>
+                        <option>Katolik</option>
+                        <option>Hindu</option>
+                        <option>Budha</option>
+                        <option>Konghucu</option>
+                    </select>
+                </p>
+
+                <p>Jenis Kelamin:
+                    <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jk" value="Perempuan"> Perempuan
+                </p>
+
+                <p>Foto: <input type="file" name="foto"></p>
+                <p>Nama Ayah: <input type="text" name="ayah"></p>
+                <p>Nama Ibu: <input type="text" name="ibu"></p>
+                <p>Alamat Rumah: <textarea name="alamat_rumah"></textarea></p>
+                <p>No. Telp: <input type="text" name="telp"></p>
+                <p>Nama Sekolah Asal: <input type="text" name="sekolah"></p>
+                <p>Alamat Sekolah Asal: <textarea name="alamat_sekolah"></textarea></p>
+
+                <p>Jurusan Dipilih:
+                    <select name="jurusan" required>
+                        <option>Komputerisasi Akuntansi</option>
+                        <option>Administrasi Bisnis</option>
+                        <option>Teknik Komputer Kontrol</option>
+                        <option>Teknik Listrik</option>
+                        <option>Mesin Otomotif</option>
+                        <option>Perkeretaapian</option>
+                        <option>Teknologi Informasi</option>
+                        <option>Akuntansi</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="submit" value="DAFTAR">
+                    <input type="reset" value="BATAL">
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- footer disini -->
+       <i>copyright@widya_2533070412025</i> 
+    </div>
+</body>
+</html>
