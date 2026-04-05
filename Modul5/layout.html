@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout dengan CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "menu main right"
+        "footer footer footer";
+      grid-template-columns: 200px 1fr 200px; /* menu, main, right */
+      grid-template-rows: 80px 1fr 60px;      /* header, konten, footer */
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .grid-container > div {
+      background-color: lightblue;
+      border: 1px solid #000;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+    }
+    .header { grid-area: header; }
+    .menu   { grid-area: menu; }
+    .main   { grid-area: main; }
+    .right  { grid-area: right; }
+    .footer { grid-area: footer; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">Header</div>
+    <div class="menu">Menu</div>
+    <div class="main">Main</div>
+    <div class="right">Right</div>
+    <div class="footer">Footer</div>
+  </div>
+  <p>Kesimpulan: CSS Grid memudahkan membuat layout halaman web dengan header, konten 3 kolom, dan footer secara rapi.</p>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Grid 2</title>
+        <style>
+            .grid-container {
+                display:grid;
+                grid-gap: 50px;
+                background-color: #2196F3;
+                padding: 10px
+            }
+            .item1 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                background-color: rgba(255,255,255,0.8);
+                padding: 20px;
+            }
+            .item {
+                background-color: rgba(255,255,255,0.8);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align:center;
+            }
+            .grid1 {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
+                }
+            .grid1 .item1 {
+                grid-column-start: 1;
+                grid-column-end: 3; /* item melebar ke 2 kolom */
+                background-color: rgba(255,255,255,0.8);
+                padding: 20px;
+                }
+            .grid1 .item {
+                background-color: rgba(255,255,255,0.8);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding: 20px;
+                text-align: center;
+                }
+            .grid2 {
+                display: grid;
+                grid-template-columns: 70px 300px auto 40px; /* bisa diganti auto auto, dll */
+                grid-gap: 10px;
+                background-color: #4CAF50;
+                padding: 10px;
+                }
+            .grid2 .item {
+                background-color: rgba(255,255,255,0.8);
+                border: 1px solid rgba(0,0,0,0.8);
+                padding: 20px;
+                text-align: center;
+                }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <di>Kesimpulan: grid-gap memberi jarak antar kolom dan baris sehingga tampilan lebih rapi.</di>
+        </div>
+
+        <h2>Skenario 1</h2>
+            <div class="grid1">
+                <div class="item1">Item 1 (melebar 2 kolom)</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">Kesimpulan: grid-column-start dan grid-column-end mengatur posisi dan lebar item di grid.</div>
+            </div>
+
+        <h2>Skenario 2</h2>
+            <div class="grid2">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">Kesimpulan: grid-template-columns mengatur jumlah dan lebar kolom, sehingga layout bisa fleksibel.</div>
+            </div>
+    </body>
+</html>

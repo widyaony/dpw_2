@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar Flex Box - Skenario 1-6</title>
+  <style>
+    .wadah_flex1 { display: flex; background-color: pink; }
+    .wadah_flex2 { display: flex; background-color: pink; }
+    .wadah_flex2 > div { background-color: lightblue; margin: 10px; padding: 10px; font-size: 20px; }
+    .wadah_flex3 { display: flex; background-color: pink; flex-direction: column; }
+    .wadah_flex3 > div { background-color: lightblue; margin: 5px; padding: 10px; }
+    .wadah_flex4 { display: flex; background-color: pink; flex-wrap: wrap; }
+    .wadah_flex4 > div { background-color: lightblue; margin: 5px; padding: 10px; width: 100px; }
+    .wadah_flex5 { display: flex; background-color: pink; flex-flow: row wrap; }
+    .wadah_flex5 > div { background-color: lightblue; margin: 5px; padding: 10px; width: 100px; }
+    .wadah_flex6 { display: flex; background-color: pink; justify-content: center; }
+    .wadah_flex6 > div { background-color: lightblue; margin: 5px; padding: 10px; width: 100px; }
+  </style>
+</head>
+<body>
+  <h2>Skenario 1</h2>
+  <div class="wadah_flex1"><div>1</div><div>2</div><div>3</div></div>
+  <p>Kesimpulan: Flexbox menyusun elemen dalam satu baris.</p>
+
+  <h2>Skenario 2</h2>
+  <div class="wadah_flex2"><div>1</div><div>2</div><div>3</div></div>
+  <p>Kesimpulan: Elemen anak bisa diberi style agar lebih rapi.</p>
+
+  <h2>Skenario 3</h2>
+  <div class="wadah_flex3">
+    <div>1</div><div>2</div><div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div>
+    <div>9</div><div>10</div><div>11</div><div>12</div>
+  </div>
+  <p>Kesimpulan: Flex-direction mengatur arah susunan elemen.</p>
+
+  <h2>Skenario 4</h2>
+  <div class="wadah_flex4">
+    <div>1</div><div>2</div><div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div>
+    <div>9</div><div>10</div><div>11</div><div>12</div>
+  </div>
+  <p>Kesimpulan: Flex-wrap membuat elemen turun ke baris baru.</p>
+
+  <h2>Skenario 5</h2>
+  <div class="wadah_flex5">
+    <div>1</div><div>2</div><div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div>
+    <div>9</div><div>10</div><div>11</div><div>12</div>
+  </div>
+  <p>Kesimpulan: Flex-flow adalah singkatan flex-direction + flex-wrap.</p>
+
+  <h2>Skenario 6</h2>
+  <div class="wadah_flex6">
+    <div>1</div><div>2</div><div>3</div><div>4</div>
+    <div>5</div><div>6</div><div>7</div><div>8</div>
+    <div>9</div><div>10</div><div>11</div><div>12</div>
+  </div>
+  <p>Kesimpulan: Justify-content mengatur perataan elemen di baris.</p>
+</body>
+</html>

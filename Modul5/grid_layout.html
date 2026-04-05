@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Belajar CSS Grid box</title>
+  <style>
+    .skenario1 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+    .skenario2 {
+      display: inline-grid;
+      grid-template-columns: auto auto auto;
+      background-color: #4CAF50;
+      padding: 10px;
+    }
+    .skenario3 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #FF9800;
+      padding: 10px;
+      grid-column-gap: 10px;
+      grid-row-gap: 50px;
+    }
+    .skenario4 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #9C27B0;
+      padding: 10px;
+      grid-gap: 50px;
+    }
+    .item {
+      background-color: rgba(255,255,255,0.8);
+      border: 1px solid rgba(0,0,0,0.8);
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Skenario 1</h2>
+  <div class="skenario1">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    <div class="item">Kesimpulan: Flex/Grid menyusun elemen dalam baris.</div>
+  </div>
+
+  <h2>Skenario 2</h2>
+  <div class="skenario2">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    <div class="item">Kesimpulan: inline-grid membuat wadah bisa sejajar dengan wadah lain.</div>
+  </div>
+
+  <h2>Skenario 3</h2>
+  <div class="skenario3">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    <div class="item">Kesimpulan: grid-column-gap dan grid-row-gap memberi jarak antar kolom/baris.</div>
+  </div>
+
+  <h2>Skenario 4</h2>
+  <div class="skenario4">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    <div class="item">Kesimpulan: grid-gap adalah cara singkat mengatur jarak kolom dan baris sekaligus.</div>
+  </div>
+</body>
+</html>

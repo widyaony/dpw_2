@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeri Foto</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .galeri {
+      display: flex;
+      flex-wrap: wrap;       /* otomatis turun baris */
+      gap: 10px;             /* jarak antar foto */
+      justify-content: center;
+    }
+
+    .galeri img {
+      width: 41px;           /* ukuran sesuai NIM terakhir */
+      height: 41px;
+      object-fit: cover;     /* biar proporsional */
+      border-radius: 4px;
+      border: 2px solid #ccc;
+      transition: transform 0.3s;
+    }
+
+    .galeri img:hover {
+      transform: scale(1.2);
+      border-color: #ff8686;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Galeri Foto Widya</h2>
+
+  <div class="galeri">
+    <img src="image/gambar 1.jpg" alt="Foto 1">
+    <img src="image/gambar 2.jpg" alt="Foto 2">
+    <img src="image/gambar 3.jpg" alt="Foto 3">
+    <img src="image/gambar 4.jpg" alt="Foto 4">
+    <img src="image/gambar 5.jpg" alt="Foto 5">
+    <img src="image/gambar 6.jpg" alt="Foto 6">
+    <img src="image/gambar 7.jpg" alt="Foto 7">
+    <img src="image/gambar 8.jpg" alt="Foto 8">
+    <img src="image/gambar 9.jpg" alt="Foto 9">
+    <img src="image/gambar 10.jpg" alt="Foto 10">
+    <img src="image/gambar 1.jpg" alt="Foto 11">
+    <img src="image/gambar 2.jpg" alt="Foto 12">
+    <img src="image/gambar 3.jpg" alt="Foto 13">
+    <img src="image/gambar 4.jpg" alt="Foto 14">
+    <img src="image/gambar 5.jpg" alt="Foto 15">
+    <img src="image/gambar 6.jpg" alt="Foto 16">
+    <img src="image/gambar 7.jpg" alt="Foto 17">
+    <img src="image/gambar 8.jpg" alt="Foto 18">
+  </div>
+
+  <p>Kesimpulan: Flexbox memudahkan membuat galeri foto rapi dengan baris dan kolom otomatis.</p>
+</body>
+</html>
